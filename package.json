@@ -1,0 +1,18 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "User app example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Simon Wilks <simon@uaventure.com>",
+  "license": "UAVenture",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jspack": "github:AndreasAntener/node-jspack",
+    "mavlink-lib": "github:UAVenture/mavlink_js_library",
+    "socket.io": "^4.1.2",
+    "underscore": "^1.13.1"
+  }
+}

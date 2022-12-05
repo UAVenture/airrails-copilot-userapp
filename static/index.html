@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+  var socket = io.connect();
+
+  socket.on('msg', function (msg) {
+    document.getElementById('name').innerHTML = msg.name;
+  });
+</script>
+
+<title>Copilot 3rd Party App</title>
+</head>
+
+<body>
+    <h2>MAVLink Monitor</h2>
+    <p>Name: [<label id="name"></label>]</p>
+</body>
+</html>
